@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>搜索 - 国产剧精选</title>
+  <meta name="description" content="静态搜索与筛选页面。">
+  <meta name="keywords" content="搜索,国产剧搜索,影片筛选">
+  <meta name="theme-color" content="#0a0e13">
+  <link rel="stylesheet" href="assets/site.css">
+  
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="国产剧精选">
+      <span class="brand-mark">国产</span>
+      <span class="brand-text">
+        <strong>国产剧精选</strong>
+        <small>静态电影站</small>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="展开菜单" data-nav-toggle>
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" data-nav>
+      <a href="index.html" class="">首页</a>
+      <a href="categories.html" class="">分类总览</a>
+      <a href="rankings.html" class="">排行榜</a>
+      <a href="search.html" class="active">搜索</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <div class="breadcrumbs"><a href="index.html">首页</a> · 搜索</div>
+    <div class="panel long-copy">
+      <h1>搜索与筛选</h1>
+      <p>输入影片名、标签、类型、地区或年份即可实时筛选。当前匹配结果 <strong data-search-count>0</strong> 条。</p>
+      <div class="filter-bar">
+        <input type="search" placeholder="搜索影片名、标签、简介、年份" data-search-input>
+        <select data-search-select>
+          <option value="all">全部类型</option>
+          <option value="电影">电影</option>
+          <option value="剧集">剧集</option>
+          <option value="动画剧集">动画剧集</option>
+        </select>
+      </div>
+    </div>
+    <div class="spacer"></div>
+    <div class="grid-tiles" data-search-results></div>
+  </div>
+</main>
+
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <h3>国产剧精选</h3>
+      <p>根据题材和热度整理推荐国产剧，包含近期关注度较高的剧集和口碑内容。</p>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">首页</a>
+      <a href="categories.html">分类总览</a>
+      <a href="rankings.html">排行榜</a>
+      <a href="search.html">搜索</a>
+    </div>
+  </div>
+</footer>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script src="assets/site.js"></script>
+<script src="assets/movies-data.js"></script>
+</body>
+</html>

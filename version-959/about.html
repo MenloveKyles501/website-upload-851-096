@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>关于本站-亚洲电影</title>
+  <meta name="description" content="关于本站与静态影视站说明。">
+  <meta name="keywords" content="关于本站,亚洲电影,静态网站,电影站">
+  <meta property="og:title" content="关于本站-亚洲电影">
+  <meta property="og:description" content="关于本站与静态影视站说明。">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="assets/site.css">
+  <script defer src="assets/site.js"></script>
+  <script defer src="https://unpkg.com/hls.js/dist/hls.min.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="index.html">
+      <span class="brand__mark">A</span>
+      <span class="brand__text">亚洲电影<small>精选电影合集</small></span>
+    </a>
+    <nav class="nav">
+      <a class="" href="index.html">首页</a><a class="" href="categories.html">分类</a><a class="" href="library.html">全库</a><a class="" href="ranking.html">排行</a>
+      <form class="nav__search" action="library.html" method="get">
+        <input type="search" name="q" placeholder="搜索影片、地区、题材、标签">
+        <button type="submit">搜索</button>
+      </form>
+    </nav>
+  </div>
+</header>
+
+<div class="container hero-lite">
+  <div class="hero-lite__box">
+    <div class="breadcrumb"><a href="index.html">首页</a><span>›</span><span>关于本站</span></div>
+    <h1>关于本站</h1>
+    <p>这是一个根据上传素材整理生成的纯静态电影站。首页、分类页、排行榜、全库页和每个详情页都可独立访问，详情页内置 HLS 播放器，可直接播放对应影片源。</p>
+  </div>
+</div>
+<div class="container page">
+  <div class="prose">
+    <p>站点围绕“亚洲电影”主题构建，采用深色石质风格、琥珀色按钮与卡片化布局，兼顾移动端浏览体验与搜索引擎收录。</p>
+    <p>全站包含 2000 条影片数据与 2000 个独立详情页，并提供分类入口、排行榜和搜索筛选功能。</p>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div>
+      <div class="brand" style="margin-bottom:10px">
+        <span class="brand__mark">A</span>
+        <span class="brand__text">亚洲电影<small>精选电影合集</small></span>
+      </div>
+      <div>为 2000 条影片建立的纯静态影视站，支持分类、排行、搜索和详情播放。</div>
+    </div>
+    <div class="footer__links">
+      <a href="categories.html">分类总览</a>
+      <a href="library.html">影片全库</a>
+      <a href="ranking.html">热门排行</a>
+      <a href="about.html">关于本站</a>
+    </div>
+  </div>
+</footer>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

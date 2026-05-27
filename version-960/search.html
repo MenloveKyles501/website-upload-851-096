@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>影片搜索-精选影片大全-精选影片片单-高清影片在线观看</title>
+    <meta name="description" content="搜索精选影片大全中的影片、地区、年份、类型和标签，快速找到可在线观看的高清影片片单。">
+    <meta name="keywords" content="精选影片大全,精选影片片单,高清影片,热门影片,高分影片,经典影片,影片合集">
+    <meta name="robots" content="index,follow">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header">
+    <nav class="top-nav" aria-label="主导航">
+        <a class="brand" href="index.html" aria-label="精选影片大全 首页">
+            <span class="brand-icon">▶</span>
+            <span>
+                <strong>精选影片大全</strong>
+                <small>精选片单 · 高清影片 · 在线观看</small>
+            </span>
+        </a>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-label="打开导航">☰</button>
+        <div class="nav-links">
+            <a class="nav-link" href="index.html">首页</a>
+            <a class="nav-link" href="categories.html">分类总览</a>
+                <a class="nav-link" href="category-featured.html">精选片单</a>
+                <a class="nav-link" href="category-hot.html">热门影片</a>
+                <a class="nav-link" href="category-classic.html">经典高分</a>
+                <a class="nav-link" href="category-new.html">高清新片</a>
+            <a class="nav-link" href="ranking.html">排行榜</a>
+        </div>
+        <form class="nav-search" action="search.html" method="get" role="search">
+            <input type="search" name="q" placeholder="搜索影片..." autocomplete="off">
+            <button type="submit" aria-label="搜索">⌕</button>
+        </form>
+    </nav>
+    <div class="mobile-panel" data-mobile-panel>
+        <form action="search.html" method="get" role="search">
+            <input type="search" name="q" placeholder="搜索影片..." autocomplete="off">
+            <button type="submit">搜索</button>
+        </form>
+        <a href="index.html">首页</a>
+        <a href="categories.html">分类总览</a>
+            <a href="category-featured.html">精选片单</a>
+            <a href="category-hot.html">热门影片</a>
+            <a href="category-classic.html">经典高分</a>
+            <a href="category-new.html">高清新片</a>
+            <a href="category-asia.html">亚洲精选</a>
+            <a href="category-world.html">海外佳作</a>
+            <a href="category-genre.html">类型片单</a>
+            <a href="category-series.html">剧集合集</a>
+        <a href="ranking.html">排行榜</a>
+    </div>
+</header>
+<main>
+    <section class="page-hero compact-hero">
+        <div>
+            <span class="eyebrow">Search</span>
+            <h1>影片搜索</h1>
+            <p>输入片名、地区、年份、类型或标签，快速查找片单内容。</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <form class="search-page-form" action="search.html" method="get" role="search">
+            <input type="search" name="q" data-search-page-input placeholder="搜索影片..." autocomplete="off">
+            <button type="submit">搜索</button>
+        </form>
+        <div class="search-status" data-search-status></div>
+        <div class="movie-grid" data-search-results></div>
+    </section>
+</main>
+<footer class="site-footer">
+    <div class="footer-grid">
+        <div>
+            <div class="footer-logo">精选影片大全</div>
+            <p>精选影片大全按地区、题材和热度整理，包含电影、视频和多类型片单内容。</p>
+        </div>
+        <div>
+            <h3>快速入口</h3>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="categories.html">分类总览</a></li>
+                <li><a href="ranking.html">排行榜</a></li>
+                <li><a href="search.html">搜索影片</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>精选分类</h3>
+            <ul>
+                <li><a href="category-featured.html">精选片单</a></li>
+                <li><a href="category-hot.html">热门影片</a></li>
+                <li><a href="category-classic.html">经典高分</a></li>
+                <li><a href="category-new.html">高清新片</a></li>
+                <li><a href="category-asia.html">亚洲精选</a></li>
+                <li><a href="category-world.html">海外佳作</a></li>
+                <li><a href="category-genre.html">类型片单</a></li>
+                <li><a href="category-series.html">剧集合集</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">© 2026 精选影片大全. 高清影片片单与在线播放入口。</div>
+</footer>
+    <script src="assets/app.js"></script>
+    <script src="assets/search-data.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

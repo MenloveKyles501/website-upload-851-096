@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="静态影库全站检索页，可搜索 2000 部影片。">
+  <meta name="keywords" content="静态影库,电影,剧集,在线播放,分类,排行榜,检索,影片详情">
+  <meta name="referrer" content="no-referrer">
+  <title>静态影库 · 检索</title>
+  <link rel="stylesheet" href="assets/style.css">
+  
+  <script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+  </script>
+</head>
+<body>
+
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">
+      <span class="logo-badge">影</span>
+      <span>静态影库</span>
+    </a>
+    <nav class="nav">
+      <a class="" href="index.html">首页</a>
+      <a class="" href="all/index.html">全部影片</a>
+      <a class="" href="categories.html">分类</a>
+      <a class="" href="ranking.html">排行</a>
+      <a class="active" href="search.html">检索</a>
+    </nav>
+    <div class="header-tools">
+      <form class="searchbar" action="search.html" method="get">
+        <input name="q" placeholder="搜索影片、地区、类型、年份">
+        <button type="submit">搜索</button>
+      </form>
+    </div>
+  </div>
+</header>
+<main class="section" data-search-app>
+  <div class="container">
+    <div class="hero-panel" style="padding:22px">
+      <div class="browse-toolbar">
+        <div>
+          <h1 style="margin:0;font-size:clamp(28px,4vw,48px)">全站检索</h1>
+          <p class="note" style="margin-top:8px">支持按标题、地区、类型、年份、标签和简介全文搜索。</p>
+        </div>
+        <div class="mini-row">
+          <a class="chip" href="all/index.html">分页目录</a>
+          <a class="chip" href="ranking.html">热榜</a>
+        </div>
+      </div>
+      <div class="searchbar" style="min-width:0;width:min(100%,720px)">
+        <input data-search-input placeholder="输入影片名、地区、类型、关键词…">
+        <button type="button">检索</button>
+      </div>
+      <div class="browse-toolbar" style="margin-top:14px">
+        <div class="filter-bar">
+          <select data-search-sort class="chip" style="padding:10px 14px">
+            <option value="relevance">按相关度</option>
+            <option value="year-desc">按年份降序</option>
+            <option value="year-asc">按年份升序</option>
+          </select>
+        </div>
+        <div class="note"><span data-search-count>0 条结果</span></div>
+      </div>
+    </div>
+    <div class="grid cards four" data-search-results style="margin-top:16px"></div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>共收录 2000 部影片，按地区、类型、年份与推荐关系构成静态索引。</div>
+    <div>静态影库 · 20 条可切换播放源 · SEO 友好结构</div>
+  </div>
+</footer>
+<script src="assets/search-index.js"></script>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
